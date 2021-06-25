@@ -11,12 +11,16 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => {
+  console.log('args', args); // expects args.onClick to be `null`
+  return <Button {...args} />
+};
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  onClick: null
 };
 
 export const Secondary = Template.bind({});
