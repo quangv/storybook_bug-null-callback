@@ -1,0 +1,25 @@
+{
+  "name": "storybook_bug-null-callback",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-actions": "^6.4.0-alpha.2",
+    "@storybook/addon-docs": "^6.4.0-alpha.2",
+    "@storybook/addon-essentials": "^6.4.0-alpha.2",
+    "@storybook/addon-links": "^6.4.0-alpha.2",
+    "@storybook/react": "^6.4.0-alpha.2",
+    "babel-loader": "^8.2.2",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
